@@ -1,5 +1,5 @@
 // Initialize Phaser, and create a 400x490px game
-var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(700, 490, Phaser.AUTO, 'gameDiv');
 
 // Create our 'main' state that will contain the game
 var mainState = {
@@ -9,10 +9,10 @@ var mainState = {
 		game.stage.backgroundColor = '#71c5cf';
 
 		// Load the bird sprite
-		game.load.image('bird', 'personajes/bird.png'); 
+		game.load.image('bird', 'assets/character2.png'); 
 		
 		//Load the pipe
-		game.load.image('pipe', 'personajes/pipe.png'); 
+		game.load.image('pipe', 'assets/pipe.png'); 
 	
 		this.pipes = game.add.group(); // Create a group  
 		this.pipes.enableBody = true;  // Add physics to the group  
@@ -67,9 +67,9 @@ var mainState = {
 	    var hole = Math.floor(Math.random() * 5) + 1;
 
 	    // Add the 6 pipes 
-	    for (var i = 0; i < 8; i++)
+	    for (var i = 0; i < 1; i++)
 		if (i != hole && i != hole + 1) 
-		    this.addOnePipe(400, i * 60 + 10);  
+		    this.addOnePipe(700, i * 60 + 10);  
 	    
             this.score += 1;  
 	    this.labelScore.text = this.score; 
@@ -91,3 +91,6 @@ var mainState = {
 // Add and start the 'main' state to start the game
 game.state.add('main', mainState);  
 game.state.start('main');
+
+
+/**http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-1/*/
