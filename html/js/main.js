@@ -9,7 +9,7 @@ var mainState = {
 		game.stage.backgroundColor = '#71c5cf';
 
 		// Load the bird sprite
-		game.load.image('bird', 'assets/character2.png'); 
+		game.load.image('bird', 'assets/Prueba2.gif'); 
 		
 		//Load the pipe
 		game.load.image('pipe', 'assets/pipe.png'); 
