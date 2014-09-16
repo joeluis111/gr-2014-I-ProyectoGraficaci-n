@@ -1,5 +1,5 @@
 // Initialize Phaser, and create a 400x490px game
-var game = new Phaser.Game(700, 490, Phaser.AUTO, 'gameDiv');
+var game = new Phaser.Game(1024, 600, Phaser.AUTO, 'gameDiv');
 
 // Create our 'main' state that will contain the game
 var mainState = {
@@ -9,14 +9,20 @@ var mainState = {
 		game.stage.backgroundColor = '#71c5cf';
 
 		// Load the bird sprite
-		game.load.image('bird', 'assets/Prueba2.gif'); 
+		//game.load.image('bird', 'assets/character1.png'); 
+        game.load.spritesheet('bird','assets/charac_sprite.png',240,248,2);
 		
 		//Load the pipe
-		game.load.image('pipe', 'assets/pipe.png'); 
-	
+		//game.load.image('pipe', 'assets/mikasa1.png');
+        //game.load.image('pipe1', 'assets/taiga.png');
+	     game.load.image('pipe', 'assets/pipe.png');
+            
+            
 		this.pipes = game.add.group(); // Create a group  
 		this.pipes.enableBody = true;  // Add physics to the group  
-		this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes 
+		//this.pipes.createMultiple(3, 'pipe'); // Create 20 pipes 
+        //this.pipes.createMultiple(3, 'pipe1');
+        this.pipes.createMultiple(10, 'pipe');
 	},
 
    	create: function() {  
@@ -25,7 +31,10 @@ var mainState = {
 
 		// Display the bird on the screen
 		this.bird = this.game.add.sprite(100, 245, 'bird');
-
+        this.bird.scale.x = 0.5; // set the size/scale of the width
+        this.bird.scale.y = 0.5;
+        this.bird.animations.add('jumping',[1,0],6,false);
+        
 		// Add gravity to the bird to make it fall
 		game.physics.arcade.enable(this.bird);
 		this.bird.body.gravity.y = 1000;  
@@ -64,13 +73,14 @@ var mainState = {
 	
 	addRowOfPipes: function() {  
 	    // Pick where the hole will be
-	    var hole = Math.floor(Math.random() * 5) + 1;
+	    var hole = Math.floor(Math.random() * 4) + 1;
 
 	    // Add the 6 pipes 
-	    for (var i = 0; i < 1; i++)
+	    for (var i = 0; i < 1; i++){
+            var posyPipe = Math.abs(Math.random() * 400);
 		if (i != hole && i != hole + 1) 
-		    this.addOnePipe(700, i * 60 + 10);  
-	    
+		    this.addOnePipe(1024, posyPipe);  
+        }
             this.score += 1;  
 	    this.labelScore.text = this.score; 
 	},
@@ -79,6 +89,7 @@ var mainState = {
 	jump: function() {  
 		// Add a vertical velocity to the bird
 		this.bird.body.velocity.y = -350;
+        this.bird.animations.play('jumping');
 	},
 
 	// Restart the game
