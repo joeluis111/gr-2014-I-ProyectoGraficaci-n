@@ -3,16 +3,39 @@
 
 <head>  
     <meta charset="utf-8" />
-    <title> Flappy Bird Clone </title>
+    
+    <IMG SRC="css/TITILO.png" WIDTH=800 HEIGHT=150 BORDER=0 ALT="titulo" p align ='center'>
 
+    <script type="text/javascript" src="js/call.js"></script>
     <script type="text/javascript" src="js/lib/phaser.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <!--<script type="text/javascript" src="css/style.css"></script>-->
 </head>
 
-<body>
-
-    <p> Press the spacebar to jump </p>
-    <div id="gameDiv"> </div>
+<body onload="load()" background="css/fondo.jpg">
+    
+    <div p align ='center'> 
+        
+        <table>
+          
+          <tr>
+             <div id="previo"> <IMG SRC="css/ready.png" WIDTH=500 HEIGHT=80 BORDER=0 ALT="titulo"></div>
+          </tr>
+           <tr>
+            <td><button type="button" onclick="activa()">START</button></td>
+            <td><button type="button" onclick="mainState.restartGame()">RESET</button></td> 
+          </tr>
+            <table class="tcental">
+              <tr> 
+                  <td>
+                      <label id=titulo><h1> Press the spacebar to jump </h1></label>
+                    <div id="gameDiv"> </div>
+                  </td>
+              </tr>
+            </table>
+        </table>
+                
+    </div>
 
 </body>  
 </html> 
