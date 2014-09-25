@@ -4,16 +4,10 @@
 	width: 1200px;
 	height: 800px;
 }
-
-#titulo {
-	
-}
-
 h1 {
 	font-style: italic;
 	font-size: 40px;
 	color: rgba(185, 51, 51, 0.69);
-	background-color: rgba(255, 255, 170, 0.74);
 }
 
 table,th,td {
@@ -47,10 +41,6 @@ h3 {
 	color: rgba(185, 52, 52, 0.76);
 	font-size: 30px;
 	font-style: oblique;
-}
-
-#pepe {
-	background-image: url(fondo2.jpg);
 }
 
 .btllamado {
@@ -89,7 +79,6 @@ h3 {
 }
 
 #licenciaTXT {
-	background-color: black;
 	color: white;
 	margin: 20px;
 	padding: 20px;
@@ -102,6 +91,9 @@ h3 {
 h5 {
 	font-size: 20px;
 	color: white;
+}
+h4{
+	FONT-SIZE: x-large;
 }
 
 #tableJuego {
@@ -116,7 +108,7 @@ th,td {
 }
 
 table#tableJuego {
-	width: 100%;;
+	width: 40%;
 }
 
 table#tableJuego th {
