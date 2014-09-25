@@ -16,6 +16,10 @@
     font-family: forque;
     src: url("Forque.ttf");
 }
+@font-face {
+    font-family: rex;
+    src: url("Rex Bold Inline.otf");
+}
 
 h1 {
 	font-style: italic;
@@ -60,7 +64,7 @@ h3 {
     font-family: Bebas;
     color:black;
     
-     background-image:url(11.jpg);
+    background-image:url(11.jpg);
     background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
@@ -73,6 +77,13 @@ h3 {
     color:black;
   
     font-size: 250%;   
+}
+#titulo{
+    text-align:center;
+    font-family: rex;
+    color:#29bf46;
+  	font-style:italic;
+    font-size: 550%;   
 }
 
 #andres{
@@ -280,4 +291,9 @@ table#tableJuego {
 
 table#tableJuego th {
 	color: #b93333;
+}
+
+#licenciaCC{
+	background-color: white;
+	}
 }
