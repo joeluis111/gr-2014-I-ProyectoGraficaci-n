@@ -1,18 +1,45 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html>
+<!-- 
+Separé la principales funciones que se encontraban en el main en 4 scripts
+-load.js contiene la funcion preload, se crean los objetos tanto del personaje como de 
+los obstaculos
+-menu.js contiene las instrucciones del juego
+-play.js agrega los objetos creados en el load en el stage del juego, ahi se van creando las instacias de cada uno de los elementos el personaje, y los obstaculos
+tambien se pone los eventos de salto y choque
+-game.js en este script se van a llamar a los demas estados del juego.
+-->   
+<head>
+  <meta charset="utf-8" />
+  <LINK href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Proyecto Graficaci&oacute;n</title>
 
-<head>  
-    <meta charset="utf-8" />
-    <title> Flappy Bird Clone </title>
+  <style>
+    #game_div, p {
+      width: 1024px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
 
-    <script type="text/javascript" src="js/lib/phaser.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="phaser.min.js"></script>
+  <script type="text/javascript" src="load.js"></script>
+  <script type="text/javascript" src="menu.js"></script>
+  <script type="text/javascript" src="play.js"></script>
+  <script type="text/javascript" src="game.js"></script>
 </head>
 
-<body>
+<body id="mainBody">
 
-    <p> Press the spacebar to jump </p>
-    <div id="gameDiv"> </div>
+  <p>Presiona espacio para saltar</p>
 
-</body>  
-</html> 
+  <div id="game_div"> </div>
+	<div align="center" style=" width : 168px;">
+		<FORM class="btllamado" METHOD="LINK" ACTION="MainFrame.html">
+			<INPUT class="btllamado" TYPE="submit" VALUE="ATRAS"
+				style=" width : 150px;">
+		</FORM>
+	</div>
+</body>
+
+</html>

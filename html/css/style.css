@@ -4,6 +4,19 @@
 	width: 1200px;
 	height: 800px;
 }
+@font-face {
+    font-family: Bebas;
+    src: url("BEBAS.ttf");
+}
+@font-face {
+    font-family: gnuolane;
+    src: url("gnuolane.ttf");
+}
+@font-face {
+    font-family: forque;
+    src: url("Forque.ttf");
+}
+
 h1 {
 	font-style: italic;
 	font-size: 40px;
@@ -42,6 +55,64 @@ h3 {
 	font-size: 30px;
 	font-style: oblique;
 }
+#pepe{
+    text-align:center;
+    font-family: Bebas;
+    color:black;
+    
+     background-image:url(11.jpg);
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    
+}
+#p1{
+    text-align:center;
+    font-family: Bebas;
+    color:black;
+  
+    font-size: 250%;   
+}
+
+#andres{
+    text-align:center;
+    font-family: gnuolane;
+    color:rgb(212, 212, 212);
+    font-size: 120%;
+    
+    background-image:url(13.jpg);
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+}
+#a1{
+    text-align:center;
+    font-family: gnuolane;
+    color:rgba(224, 224, 224, 0.74);
+  
+    font-size: 250%;   
+}
+#oscar{
+    text-align:center;
+    font-family: forque;
+    color:white;
+    font-size: 120%;  
+    
+    background-image:url(12.jpg);
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+}
+#o1{
+    text-align:center;
+    font-family: forque;
+    color:white;
+        font-size: 250%; 
+
+}
 
 .btllamado {
 	border-top: 1px solid #96d1f8;
@@ -77,7 +148,103 @@ h3 {
 	border-top-color: #29668f;
 	background: #29668f;
 }
+.button1 {
+   border-top: 1px solid #ffffff;
+   background: #979899;
+   background: -webkit-gradient(linear, left top, left bottom, from(#363333), to(#979899));
+   background: -webkit-linear-gradient(top, #363333, #979899);
+   background: -moz-linear-gradient(top, #363333, #979899);
+   background: -ms-linear-gradient(top, #363333, #979899);
+   background: -o-linear-gradient(top, #363333, #979899);
+   padding: 8px 16px;
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 21px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button1:hover {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   color: #ccc;
+   }
+.button1:active {
+   border-top-color: #b0aaaa;
+   background: #b0aaaa;
+   }
 
+
+.button2 {
+   border-top: 1px solid #75614b;
+   background: #261605;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5e3f18), to(#261605));
+   background: -webkit-linear-gradient(top, #5e3f18, #261605);
+   background: -moz-linear-gradient(top, #5e3f18, #261605);
+   background: -ms-linear-gradient(top, #5e3f18, #261605);
+   background: -o-linear-gradient(top, #5e3f18, #261605);
+   padding: 12px 24px;
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   border-radius: 25px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: bottom;
+   }
+.button2:hover {
+   border-top-color: #3d2611;
+   background: #3d2611;
+   color: #ffffff;
+   }
+.button2:active {
+   border-top-color: #965d2c;
+   background: #965d2c;
+   }
+   
+.button3 {
+   border-top: 1px solid #81b080;
+   background: #49a68c;
+   background: -webkit-gradient(linear, left top, left bottom, from(#0c2407), to(#49a68c));
+   background: -webkit-linear-gradient(top, #0c2407, #49a68c);
+   background: -moz-linear-gradient(top, #0c2407, #49a68c);
+   background: -ms-linear-gradient(top, #0c2407, #49a68c);
+   background: -o-linear-gradient(top, #0c2407, #49a68c);
+   padding: 6.5px 13px;
+   -webkit-border-radius: 19px;
+   -moz-border-radius: 19px;
+   border-radius: 19px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #446b85;
+   background: #446b85;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
 #licenciaTXT {
 	color: white;
 	margin: 20px;
